@@ -14,8 +14,9 @@ import thosaActivityTwo from '../public/images/thsChapterActivities2.jpeg'
 import thosaActivityThree from '../public/images/thsChapterActivites3.jpg'
 import thosaActivityFour from '../public/images/thsChapterActivity.jpeg'
 import thosaPresident from '../public/images/president.jpg'
-import thsosaLogo from '../public/images/THSOSA-logo.png'
+// import thsosaLogo from '../public/images/THSOSA-logo.png'
 import MainLogo from '../public/images/THSOSA-logo.png'
+import { Link } from 'react-router-dom'
 export default function Home () {
   return (
     <div className={styles.container}>
@@ -30,14 +31,14 @@ export default function Home () {
         <div className={styles.navigationContainer}>
           <div className={styles.navigationLogo}>
 
-            <Image src={MainLogo} />
+            <Image alt='thsosa' src={MainLogo} />
           </div>
           <div className={styles.navigationLinks}>
-            <a href='/'><p>ABOUT US</p></a>
-            <a href='/'><p>AGM 2022</p></a>
-            <a href='/'><p>GALLERY</p></a>
-            <a href='/'><p>CONTACT</p></a>
-            <a href='/'><p>EVENTS</p></a>
+            <Link href='/'><p>ABOUT US</p></Link>
+            <Link href='/'><p>AGM 2022</p></Link>
+            <Link href='/'><p>GALLERY</p></Link>
+            <Link href='/'><p>CONTACT</p></Link>
+            <Link href='/'><p>EVENTS</p></Link>
           </div>
           <div className={styles.navigationButtons}>
             <div className={styles.loginButton}>
@@ -62,7 +63,7 @@ export default function Home () {
         <div className={styles.aboutContainer}>
           <div className={styles.aboutSection}>
 
-            <Image src={aboutHeaderImage} className={styles.aboutHeader} />
+            <Image alt='thsosa' src={aboutHeaderImage} className={styles.aboutHeader} />
             <h4>Who we are</h4>
             <p>DSC Technical High School Old Students’ Association evolved as a matter of necessity and the need for old students to come together for the development and support of ourselves and also our alma mater, as a way of giving back to society.
 
@@ -73,7 +74,7 @@ Every year, we come together as a body to Meet | Network | Impact each other and
           </div>
           <div className={styles.missionSection}>
             <div className={styles.missionIcon}>
-              <Image src={missionImage} className={styles.missionIcon} />
+              <Image alt='thsosa' src={missionImage} className={styles.missionIcon} />
             </div>
 
             <h4>Our Mission</h4>
@@ -82,7 +83,7 @@ Every year, we come together as a body to Meet | Network | Impact each other and
           </div>
           <div className={styles.missionSection}>
             <div className={styles.missionIcon}>
-              <Image src={visionImage} className={styles.missionIcon} />
+              <Image alt='thsosa' src={visionImage} className={styles.missionIcon} />
             </div>
 
             <h4>Our Values</h4>
@@ -95,32 +96,32 @@ Every year, we come together as a body to Meet | Network | Impact each other and
         <div className={styles.impactContainer}>
           <div className={styles.impactHeaderImage} >
 
-            <Image src={impactHeaderImage} />
+            <Image alt='thsosa' src={impactHeaderImage} />
           </div>
           <p className={styles.impactText}>DSC Technical High School Old Students’ Association evolved as a matter of necessity and the need for old students to come together for the development and support of ourselves and also our alma mater, as a way of giving back to society.
             Every year, we come together as a body to Meet | Network | Impact each other and plan a way to foster growth for ourselves and our alma mater.</p>
           <div className={styles.impactGallerySection}>
             <div className={styles.impactGallerySectionOne}>
               <div className={styles.galleryOne}>
-                <Image src={thosaActivityOne} style={{
+                <Image alt='thsosa' src={thosaActivityOne} style={{
                   borderRadius: '10px'
                 }} />
               </div>
             </div>
             <div className={styles.impactGallerySectionTwo}>
               <div className={styles.galleryTwo}>
-                <Image src={thosaActivityTwo} style={{
+                <Image alt='thsosa' src={thosaActivityTwo} style={{
                   borderRadius: '10px'
                 }} />
               </div>
               <div className={styles.impactGallerySectionInner}>
               <div className={styles.galleryThree}>
-                  <Image src={thosaActivityThree} style={{
+                  <Image alt='thsosa' src={thosaActivityThree} style={{
                     borderRadius: '10px'
                   }} />
                 </div>
                 <div className={styles.galleryFour}>
-                  <Image src={thosaActivityFour} style={{
+                  <Image alt='thsosa' src={thosaActivityFour} style={{
                     borderRadius: '10px'
                   }} />
                 </div>
@@ -160,28 +161,28 @@ Every year, we come together as a body to Meet | Network | Impact each other and
         {/* begining of executives container */}
         <div className={styles.executivesContainer}>
           <div className={styles.executivesHeaderImage} >
-            <Image src={executivesHeaderImage} />
+            <Image alt='thsosa' src={executivesHeaderImage} />
 
           </div>
           <div className={styles.executivesImageSection}>
             <div className={styles.executivesImageSectionInner}>
               <div className={styles.executivesCard}>
-                <Image src={thosaPresident} />
+                <Image alt='thsosa' src={thosaPresident} />
               </div>
               <div className={styles.executivesCard}>
-                <Image src={thosaPresident} />
+                <Image alt='thsosa' src={thosaPresident} />
               </div>
               <div className={styles.executivesCard}>
-                <Image src={thosaPresident} />
+                <Image alt='thsosa' src={thosaPresident} />
               </div>
               <div className={styles.executivesCard}>
-                <Image src={thosaPresident} />
+                <Image alt='thsosa' src={thosaPresident} />
               </div>
               <div className={styles.executivesCard}>
-                <Image src={thosaPresident} />
+                <Image alt='thsosa' src={thosaPresident} />
               </div>
               <div className={styles.executivesCard}>
-                <Image src={thosaPresident} />
+                <Image alt='thsosa' src={thosaPresident} />
 
               </div>
             </div>
@@ -191,7 +192,7 @@ Every year, we come together as a body to Meet | Network | Impact each other and
         {/* beginning of news/blog container */}
         <div className={styles.newsContainer}>
           <div className={styles.newsContainerHeaderImage} >
-            <Image src={newsContainerHeaderImage} />
+            <Image alt='thsosa' src={newsContainerHeaderImage} />
 
           </div>
           <div className={styles.newsContainerInner}>
@@ -199,7 +200,7 @@ Every year, we come together as a body to Meet | Network | Impact each other and
               <div className={styles.newsCard}>
                 <div className={styles.newsCardImage}>
 
-                  <Image src={thosaActivityOne} />
+                  <Image alt='thsosa' src={thosaActivityOne} />
                 </div>
                 <div className={styles.newsCardInner}>
                   <h5>Jun 8, 2022</h5>
@@ -211,7 +212,7 @@ Every year, we come together as a body to Meet | Network | Impact each other and
               <div className={styles.newsCard}>
                 <div className={styles.newsCardImage}>
 
-                  <Image src={thosaActivityOne} />
+                  <Image alt='thsosa' src={thosaActivityOne} />
                 </div>
                 <div className={styles.newsCardInner}>
                   <h5>Jun 8, 2022</h5>
@@ -223,7 +224,7 @@ Every year, we come together as a body to Meet | Network | Impact each other and
               <div className={styles.newsCard}>
                 <div className={styles.newsCardImage}>
 
-                  <Image src={thosaActivityOne} />
+                  <Image alt='thsosa' src={thosaActivityOne} />
                 </div>
                 <div className={styles.newsCardInner}>
                   <h5>Jun 8, 2022</h5>
